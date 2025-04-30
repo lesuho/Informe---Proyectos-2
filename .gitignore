@@ -1,6 +1,5 @@
 # Dependencias
 node_modules/
-/node_modules
 **/node_modules
 /FRONTEND/node_modules
 /BACKEND/node_modules
@@ -8,7 +7,8 @@ node_modules/
 # Archivos de entorno
 .env
 .env.local
-.env.*.local
+.env.*
+**/.env
 
 # Archivos de sistema
 .DS_Store
