@@ -1,67 +1,56 @@
 # Proyecto MERN CRUD con Autenticación
 
+## Descripción
 Este proyecto es una aplicación web full-stack construida con el stack MERN (MongoDB, Express, React, Node.js) que incluye funcionalidades CRUD y autenticación de usuarios.
 
 ## Estructura del Proyecto
-
 ```
 proyecto/
-├── FRONTEND/        # Frontend React
-├── BACKEND/         # Backend Node.js
-└── DOCUMENTOS/      # Documentación del proyecto
-    ├── README.md
-    └── Integrantes.txt
+├── BACKEND/        # Servidor Node.js y Express
+├── FRONTEND/       # Cliente React
+└── DOCUMENTOS/     # Documentación del proyecto
 ```
 
-## Requisitos Previos
+## Tecnologías Utilizadas
+- MongoDB: Base de datos NoSQL
+- Express.js: Framework de backend
+- React: Biblioteca de frontend
+- Node.js: Entorno de ejecución
+- Docker: Contenedorización
 
+## Configuración del Proyecto
+
+### Requisitos Previos
 - Node.js (v14 o superior)
 - MongoDB
 - Docker (opcional)
 
-## Instalación
-
-1. Clonar el repositorio:
+### Instalación y Ejecución
+1. Clonar el repositorio
 ```bash
 git clone https://github.com/lesuho/Informe---Proyectos-2.git
 cd Informe---Proyectos-2
 ```
 
-2. Instalar dependencias:
+2. Configurar Backend (BACKEND/)
 ```bash
-# Backend
 cd BACKEND
 npm install
-
-# Frontend
-cd ../FRONTEND
-npm install
-```
-
-3. Configurar variables de entorno:
-```bash
-# Crear archivo .env en la carpeta BACKEND
-cp .env.example .env
-# Editar .env con tus configuraciones
-```
-
-4. Iniciar la aplicación:
-```bash
-# Backend
-cd BACKEND
+# Configurar .env con las variables necesarias
 npm start
+```
 
-# Frontend (en otra terminal)
+3. Configurar Frontend (FRONTEND/)
+```bash
 cd FRONTEND
+npm install
 npm run dev
 ```
 
-## Uso con Docker
-
+### Uso con Docker
 ```bash
 docker-compose up --build
 ```
 
-## Documentación
-
-La documentación detallada del proyecto se encuentra en la carpeta `DOCUMENTOS/`. 
+## Integrantes del Proyecto
+Ver [Integrantes.txt](Integrantes.txt) para la lista completa de contribuidores. 
