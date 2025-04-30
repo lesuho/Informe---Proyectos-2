@@ -1,15 +1,16 @@
-# MERN CRUD con Autenticación
+# Proyecto MERN CRUD con Autenticación
 
 Este proyecto es una aplicación web full-stack construida con el stack MERN (MongoDB, Express, React, Node.js) que incluye funcionalidades CRUD y autenticación de usuarios.
 
 ## Estructura del Proyecto
 
 ```
-mern-crud-auth/
-├── client/          # Frontend React
-├── server/          # Backend Node.js
-├── documents/       # Documentación del proyecto
-└── docker/          # Configuración de Docker
+proyecto/
+├── FRONTEND/        # Frontend React
+├── BACKEND/         # Backend Node.js
+└── DOCUMENTOS/      # Documentación del proyecto
+    ├── README.md
+    └── Integrantes.txt
 ```
 
 ## Requisitos Previos
@@ -23,23 +24,23 @@ mern-crud-auth/
 1. Clonar el repositorio:
 ```bash
 git clone https://github.com/lesuho/Informe---Proyectos-2.git
-cd mern-crud-auth
+cd Informe---Proyectos-2
 ```
 
 2. Instalar dependencias:
 ```bash
 # Backend
-cd server
+cd BACKEND
 npm install
 
 # Frontend
-cd ../client
+cd ../FRONTEND
 npm install
 ```
 
 3. Configurar variables de entorno:
 ```bash
-# Crear archivo .env en la carpeta server
+# Crear archivo .env en la carpeta BACKEND
 cp .env.example .env
 # Editar .env con tus configuraciones
 ```
@@ -47,11 +48,11 @@ cp .env.example .env
 4. Iniciar la aplicación:
 ```bash
 # Backend
-cd server
+cd BACKEND
 npm start
 
 # Frontend (en otra terminal)
-cd client
+cd FRONTEND
 npm run dev
 ```
 
@@ -63,8 +64,4 @@ docker-compose up --build
 
 ## Documentación
 
-La documentación detallada del proyecto se encuentra en la carpeta `documents/`.
-
-## Contribuidores
-
-- [Lista de contribuidores](Integrantes.txt)
+La documentación detallada del proyecto se encuentra en la carpeta `DOCUMENTOS/`. 
