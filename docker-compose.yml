@@ -1,10 +1,10 @@
 services:
   client:
-    build: ./client
+    build: ./FRONTEND
     ports:
       - "3000:3000"
     volumes:
-      - ./client:/app
+      - ./FRONTEND:/app
       - /app/node_modules
     environment:
       - NODE_ENV=development
@@ -12,11 +12,11 @@ services:
       - server
 
   server:
-    build: ./server
+    build: ./BACKEND
     ports:
       - "5000:5000"
     volumes:
-      - ./server:/app
+      - ./BACKEND:/app
       - /app/node_modules
     environment:
       - NODE_ENV=development
