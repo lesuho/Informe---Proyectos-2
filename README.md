@@ -32,24 +32,19 @@ git clone https://github.com/lesuho/Informe---Proyectos-2.git
 cd Informe---Proyectos-2
 ```
 
-2. Configurar Backend (BACKEND/)
-```bash
-cd BACKEND
-npm install
-# Configurar .env con las variables necesarias
-npm start
-```
-
-3. Configurar Frontend (FRONTEND/)
+2. Configurar Backend (backend/)
 ```bash
 cd FRONTEND
 npm install
+# Configurar .env con las variables necesarias
 npm run dev
 ```
 
-### Uso con Docker
+3. Configurar Frontend (frontend/)
 ```bash
-docker-compose up --build
+cd BACKEND
+npm install
+npm start
 ```
 
 ## Integrantes del Proyecto
