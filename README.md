@@ -6,9 +6,9 @@ Este proyecto es una aplicación web full-stack construida con el stack MERN (Mo
 ## Estructura del Proyecto
 ```
 proyecto/
-├── BACKEND/        # Servidor Node.js y Express
-├── FRONTEND/       # Cliente React
-└── DOCUMENTOS/     # Documentación del proyecto
+├── backend/        # Servidor Node.js y Express
+├── frontend/       # Cliente React
+└── documents/     # Documentación del proyecto
 ```
 
 ## Tecnologías Utilizadas
@@ -16,14 +16,12 @@ proyecto/
 - Express.js: Framework de backend
 - React: Biblioteca de frontend
 - Node.js: Entorno de ejecución
-- Docker: Contenedorización
 
 ## Configuración del Proyecto
 
 ### Requisitos Previos
 - Node.js (v14 o superior)
 - MongoDB
-- Docker (opcional)
 
 ### Instalación y Ejecución
 1. Clonar el repositorio
