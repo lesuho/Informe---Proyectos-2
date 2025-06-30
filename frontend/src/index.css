@@ -1,0 +1,43 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Estilos base */
+@layer base {
+  body {
+    @apply bg-white text-gray-900 dark:bg-dark-bg-primary dark:text-white transition-colors duration-200;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    @apply text-gray-900 dark:text-white;
+  }
+  
+  p, span, div {
+    @apply text-gray-700 dark:text-gray-300;
+  }
+  
+  /* Estilos para enlaces */
+  a {
+    @apply text-blue-600 dark:text-blue-400 no-underline hover:no-underline;
+  }
+  
+  /* Estilos para botones */
+  button, .btn {
+    @apply transition-colors duration-200;
+  }
+  
+  /* Estilos para inputs */
+  input, textarea, select {
+    @apply bg-white dark:bg-dark-bg-secondary border border-gray-300 dark:border-dark-border text-gray-900 dark:text-white rounded-md px-3 py-2 focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent;
+  }
+  
+  /* Estilos para tarjetas */
+  .card {
+    @apply bg-white dark:bg-dark-bg-secondary rounded-lg shadow-md p-6 border border-gray-200 dark:border-dark-border;
+  }
+  
+  /* Estilos para la barra de navegación */
+  .navbar {
+    @apply bg-white dark:bg-dark-bg-secondary shadow-md dark:shadow-lg dark:shadow-dark-bg-primary/30;
+  }
+}
