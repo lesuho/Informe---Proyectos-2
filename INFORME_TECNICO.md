@@ -172,7 +172,7 @@ const protect = asyncHandler(async (req, res, next) => {
 - JWT con expiración configurable
 - Refresh tokens para sesiones prolongadas
 - Middleware de protección de rutas
-- Roles y permisos granulares
+- Roles y permisos detallados
 
 ### 4.2 Sistema de Notificaciones
 
