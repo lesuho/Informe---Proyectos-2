@@ -114,8 +114,8 @@ Smart Task es una aplicación web de gestión de tareas colaborativa desarrollad
 
 ### 3.1 Gestión de Estado Compleja
 
-**Problema:** Múltiples fuentes de estado (autenticación, notificaciones, chat, tema)
-**Solución:** Implementación de Context API con providers especializados
+**Problema:** La app tiene múltiples estados globales (auth, notificaciones, chat, tema) difíciles de manejar juntos
+**Solución:** Usar Context API con providers separados para organizar y compartir cada estado por separado.
 - `AuthContext`: Gestión de sesión de usuario
 - `NotificationContext`: Estado de notificaciones
 - `SocketContext`: Conexión WebSocket
@@ -131,11 +131,11 @@ Smart Task es una aplicación web de gestión de tareas colaborativa desarrollad
 
 ### 3.3 Sistema de Roles y Permisos
 
-**Problema:** Control granular de acceso a tareas
+**Problema:** Se necesita controlar quién puede ver o editar cada tarea de forma detallada
 **Solución:**
-- Modelo de roles flexible con permisos específicos
-- Sistema de compartición de tareas con roles (editor/lector)
-- Middleware de autorización en endpoints
+- Usar un modelo de roles flexible con permisos definidos
+- Permitir compartir tareas asignando roles como editor o lector
+- Proteger los endpoints con middleware de autorización
 
 ### 3.4 CORS y Seguridad
 
